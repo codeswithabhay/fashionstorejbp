@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,800;1,200&family=Roboto:wght@300;400&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+
+body {
+  font-family: "Prata", serif;
+  font-weight: 400;
+  font-style: normal;
+   /* color: #333; */
+   background-color: #fff;
+  }
+
+  /* Resetting default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration:none ;
+  color: white;
+}
+.btn{
+  padding: 10px 20px;
+  font-weight: 200;
+  cursor: pointer;
+  border: none;
+  background-color: rgb(209, 207, 207);
+
+}
+.btn:hover{
+  background-color: rgba(90, 88, 88, 0.74);
+}
+
+img:hover{
+  opacity: 70%;
+}
+/* Styling the navigation bar */
+header{
+display: flex;
+color: #fff;
+}
+.social-links{
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 50px;
+  
+  
+}
+.social-links i{
+  padding: 10px;
+  cursor: pointer;
+}
+nav {
+  width: 100%;
+  background-color: #333; /* Dark grey background */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+nav h1{
+  font-weight: 100;
+}
+nav h1 span{
+  font-weight: 700;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px 20px; /* Add padding to make clickable area larger */
+  text-decoration: none;
+  color: white; /* White text color */
+}
+
+nav ul li a:hover {
+  background-color: #555; /* Darker grey background on hover */
+}
+
+.right-nav{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  padding-right: 50px ;
+  background-color: #333; 
+}
+.right-nav a{
+  padding: 10px;
+}
+
+/*  H E R O - SECTION */
+#hero-section{
+  display: flex;
+  height: 100vh;
+}
+.containerLeft{
+  width: 50%;
+  padding-inline:4rem ;
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+  padding: 60px;
+  /* border: red solid 2px; */
+  text-align: left;
+  padding-top:10% ;
+}
+.containerLeft h1, h2{
+  font-size: 46px;
+  font-weight: 100;
+  
+} 
+.containerRight{
+  width: 90%;
+position: relative;
+display: grid;
+isolation: isolate;
+gap: 30px;
+/* border: #333 solid 2px; */
+border-radius: 30% 70% 0% 100% / 59% 22% 78% 41% ;
+background-color: rgb(235, 233, 233);
+/* animation: shapechange 1.5s  infinite ; */
+}
+@keyframes shapechange{
+  100%{
+    border-radius: 8% 92% 0% 100% / 83% 40% 60% 17% ;
+  }
+}
+.containerRight img{
+  max-width: 20rem;
+  
+}
+.images{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.images img{
+  border-radius: 10px;
+}
+.HERO-IMG1{
+  transform: translateX(-1.5rem);
+  box-shadow:5px 5px 20px #333;
+}
+
+
+/* home-contenSection */
+
+#home-contenSection{
+  padding: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* padding-block: 20px; */
+  text-align: center;
+}
+.subheading{
+  font-size: 30px;
+  font-weight: 500;
+  border-bottom: #333 solid 2px;
+  margin-bottom: 40px;
+  text-align: left;
+}
+.artical-boxes{
+  width: 1280px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: left;
+  
+}
+.artical-box{
+  max-width: 360px ;
+  /* padding: 10px; */
+  padding-bottom: 20px;
+  border-bottom: #333 solid 2px;
+  transition: 3s ease-in-out;
+  margin: 20px;
+  /* border: #333 solid 2px; */
+  
+  
+  /* box-shadow: 5px 5px 20px rgba(51, 51, 51, 0.753); */
+  /* background-color: rgb(231, 228, 228); */
+  color: #333;
+  border-radius: 4px;
+
+
+}
+.artical-box h3{
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+.artical-box h3:hover{
+  color: rgb(167, 94, 94);
+}
+
+.artical-box img{
+  MAX-width: 360px;
+  max-height: 260PX;
+  /* position: fixed; */
+  object-fit: contain;
+}
+.read-more-btn{
+  margin-top: 80px;
+  padding: 10px 30px ;
+  font-size: 15px;
+  margin-bottom: 120px;
+}
+#categories{
+text-align: center;
+}
+.categories-boxes{
+  width: 100%;
+  height: 50vh;
+  /* border: 2px solid black; */
+  display: flex;
+  text-align: center;
+  padding: 30px;
+}
+
+.categories-box{
+  width: 250px;
+  height: 300px;
+  /* border: 2px solid black; */
+}
+.categories-box h4{
+  color: #333;
+  font-size: 21px;
+}
+.categories-box img{
+width: 200px;
+height: 272px;
+}
+
+
+/* contact */
+#contact{
+  width: 100%;
+  height: 80vh;
+  background-color: #333;
+  background: url(IMG/contact-background.jpg);
+  background-size: cover;
+  box-shadow: 
+  inset 0px 11px 500px -10px rgb(5, 5, 5),
+  /* inset 0px -20px 5px -10px rgb(161, 72, 72);  */
+}
+
+#contact .left {
+ 
+  
+}
+
+#contact .right {
+  width: 100%;
+  height: 70%;
+  display:flex;
+  flex-direction: column;
+  padding: 100px;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+
+#contact .right input{
+  width: 450px;
+  border: none;
+  border-radius: 6px;
+  margin: 10px 0;
+  font-size: 19px;
+  padding: 10px;
+  outline: none;
+
+}
+
+#contact .right h4{
+  font-size: 27px;
+  color: #333;
+}
+#contact .bottom{
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+  
+  
+}
+.contact-bottom-topics{
+  width: 100%;
+  display: flex;
+  /* flex-wrap: wrap; */
+  padding:20px  ;
+  align-items: center;
+  text-align: center;
+}
+.contact-bottom-topics a{
+font-size: 14px;
+color: #333;
+font-weight: 700;
+padding: 5px 9px;
+margin-right: 25px;
+
+}
+.contact-bottom-topics a:hover{
+  color: #333;
+ background-color: rgb(238, 237, 237);
+  
+  }
+
+
+
+
+
+
+
+
+
+  /* Artical Html css ---------------------------------------------==================----------*/
+
+  .artical-container{
+    width: 1020px;
+    height: 100vh auto ;
+    margin:60px 60px 0 0 ;
+    margin-left: 60px;
+    /* border: 2px solid red; */
+  }
+
+  .artical-container h2{
+    font-size: 25px;
+    border-bottom: #333 2px solid;
+    padding: 20px;
+  }
+  .artical-container h3{
+    font-size: 22px;
+  
+  }
+  .artical-container .artImg{
+  width: 100%;
+  height: 520px;
+  margin-top: 80px;
+  }
+
+  .artical-container p{
+    padding: 80px 0;
+  }
+  .asloread-cards{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding-bottom: 80px;
+  }
+  .card{
+    padding: 10px 0;
+  }
+  .card img{
+    width: 300px;
+    height:200 ;
+  }
+  .card h4{
+    color: #333;
+    font-size: 14px;
+  }
